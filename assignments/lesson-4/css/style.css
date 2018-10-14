@@ -1,0 +1,10 @@
+* {
+    font-family: 'Muli', sans-serif;
+}
+
+header, 
+header > img.logo, 
+header > div.header-text, 
+header > div.current-conditions {
+    display: inline-block;
+}
