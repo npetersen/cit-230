@@ -1,3 +1,25 @@
+@media (max-width: 500px) {
+
+    nav ul {
+        display: none;
+    }
+
+    article img {
+        float: right;
+        max-width: 100%;
+        height: auto;
+        margin: -50px 0 0 30px;
+    }
+
+    footer .footer-img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        margin: 1.2em;
+    }
+
+}
+
 body {
     font-family: 'Muli', sans-serif;
     font-size: 18px;
@@ -128,12 +150,12 @@ article {
     color: #fff;
 }
 
-article img {
+/* article img {
     float: right;
     max-width: 25%;
     height: auto;
     margin: -50px 0 0 30px;
-}
+} */
 
 footer {
     background-color: #96bbbf;
@@ -141,12 +163,12 @@ footer {
     margin-bottom: 2em;
 }
 
-footer .footer-img {
+/* footer .footer-img {
     max-width: 25%;
     height: auto;
     vertical-align: middle;
     margin: 1.2em;
-}
+} */
 
 footer .footer-text {
     display: inline-block;

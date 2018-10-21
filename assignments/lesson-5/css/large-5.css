@@ -1,0 +1,28 @@
+@media (min-width: 501px) {
+
+    .current-conditions img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+    }
+
+    article img {
+        float: right;
+        max-width: 25%;
+        height: auto;
+        margin: -50px 0 0 30px;
+    }
+
+    footer .footer-img {
+        max-width: 25%;
+        height: auto;
+        vertical-align: middle;
+        margin: 1.2em;
+    }
+
+}
