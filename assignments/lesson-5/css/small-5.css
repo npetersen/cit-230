@@ -1,0 +1,170 @@
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    color: #036;
+}
+
+header {
+    background-color: #369;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+header > img {
+    vertical-align: middle;
+}
+
+.header-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4rem;
+}
+
+.header-text h4 {
+    font-style: italic;
+}
+
+.current-conditions {
+    background-color: #1ccad8;
+    display: inline-block;
+    vertical-align: middle;
+    /* margin: 1rem 0 1rem 3rem; */
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 2px solid #036;
+    border-radius: .4em;
+    width: 3em;
+}
+
+.current-conditions img, .hero img {
+    /* display: inline; */
+    max-width: 100%; 
+    height: auto;
+}
+
+.current-conditions p {
+    display: inline;
+}
+
+nav {
+    background-color: #036;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #1ccad8;
+}
+
+main, footer {
+    width: 52.5%;
+    margin: auto;
+}
+
+main h1 {
+    text-align: center;
+}
+
+.hero {
+    width: 100%;
+    /* border: 1px solid #036; */
+    position: relative;
+    color: #fff;
+}
+
+.hero aside {
+    background-color: rgba(28, 202, 216, .9);
+    width: 25%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 2px solid #036; 
+    border-radius: .4em;
+    padding: 1rem;
+}
+
+.hero aside h3 {
+    text-decoration: underline;
+}
+
+.hero aside ul {
+    list-style: none;
+    margin-left: -35px;
+}
+
+.hero aside ul li {
+    padding: 0 0 5px 0;
+}
+
+.cc-value {
+    color: #f4e04d;
+}
+
+article {
+    background-color: rgba(51, 102, 153, .9);
+    text-align: justify;
+    font-size: .9em;
+    padding: 1em;
+    margin: 1em 0;
+    color: #fff;
+}
+
+article img {
+    float: right;
+    max-width: 25%;
+    height: auto;
+    margin: -50px 0 0 30px;
+}
+
+footer {
+    background-color: #96bbbf;
+    font-size: .75em;
+    margin-bottom: 2em;
+}
+
+footer .footer-img {
+    max-width: 25%;
+    height: auto;
+    vertical-align: middle;
+    margin: 1.2em;
+}
+
+footer .footer-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4rem;
+}
+
+footer .footer-map {
+    display: inline-block;
+    vertical-align: middle;
+    /* max-width: 25%;
+    height: auto; */
+}
+
+footer .footer-disclosures {
+    background-color: #036 !important;
+    text-align: center;
+    color: #fff;
+    padding: .5em;
+}
+
