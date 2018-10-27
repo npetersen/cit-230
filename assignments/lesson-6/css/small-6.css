@@ -33,11 +33,17 @@
         background-color: #1ccad8;
         color: #fff;
     }
+    
+    main, footer {
+        width: 90%;
+        margin: auto;
+    }
+
     article img {
         float: right;
         max-width: 100%;
         height: auto;
-        margin: -50px 0 0 30px;
+        margin: 0 0 20px 30px;
     }
     footer .footer-img {
         max-width: 100%;
@@ -97,7 +103,6 @@ header>img {
 
 .current-conditions img,
 .hero img {
-    /* display: inline; */
     max-width: 100%;
     height: auto;
 }
@@ -106,54 +111,11 @@ header>img {
     display: inline;
 }
 
-
-/* .navigation {
-    background-color: #036;
-    margin-top: 0;
-}
-
-.navigation ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-.navigation li {
-    display: inline-block;
-    font-size: 1.2em;
-    line-height: 1.8em;
-}
-
-.navigation a {
-    display: block;
-    color: #fff;
-    padding: 1rem 1.5rem;
-    text-decoration: none;
-}
-
-.navigation a:hover {
-    background-color: #1ccad8;
-    color: #fff;
-}
-
-.navigation {
-    list-style: none;
-}
-
-.navigation li {
-    display: none;
-}
-
-.navigation li a:hover {
-    color: #fff;
-} */
-
-main,
+/* main,
 footer {
     width: 52.5%;
     margin: auto;
-}
+} */
 
 main h1 {
     text-align: center;
@@ -203,27 +165,11 @@ article {
     color: #fff;
 }
 
-
-/* article img {
-    float: right;
-    max-width: 25%;
-    height: auto;
-    margin: -50px 0 0 30px;
-} */
-
 footer {
     background-color: #96bbbf;
     font-size: .75em;
     margin-bottom: 2em;
 }
-
-
-/* footer .footer-img {
-    max-width: 25%;
-    height: auto;
-    vertical-align: middle;
-    margin: 1.2em;
-} */
 
 footer .footer-text {
     display: inline-block;

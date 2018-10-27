@@ -30,9 +30,14 @@
     }
     .hero img {
         width: 100%;
-        max-width: 900px;
         height: auto;
     }
+    
+    main, footer {
+        width: 70%;
+        margin: auto;
+    }
+
     article img {
         float: right;
         max-width: 25%;
