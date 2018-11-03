@@ -1,4 +1,11 @@
 @media (min-width: 501px) {
+    header,
+    .navigation {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
     .hamburger {
         display: none;
     }
@@ -9,12 +16,12 @@
         margin-top: 0;
     }
     .navigation li {
-        display: inline-block;
+        /* display: inline-block; */
         font-size: 1.2em;
         line-height: 1.8em;
     }
     .navigation a {
-        display: block;
+        /* display: block; */
         color: #fff;
         padding: 1rem 1.5rem;
         text-align: center;
@@ -32,12 +39,11 @@
         width: 100%;
         height: auto;
     }
-    
-    main, footer {
+    main,
+    footer {
         width: 70%;
         margin: auto;
     }
-
     article img {
         float: right;
         max-width: 25%;
