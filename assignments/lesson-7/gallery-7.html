@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
     <link rel="stylesheet" href="css/small-7.css">
+    <link rel="stylesheet" href="css/medium-7.css">
     <link rel="stylesheet" href="css/large-7.css">
     <title>Weather or Not - Preston</title>
 </head>
@@ -40,29 +41,45 @@
     </nav>
 
     <main>
-        <h1>The Town of Preston</h1>
-        <div class="hero">
-            <aside>
-                <h3>Weather Summary</h3>
-                <ul>
-                    <li>Currently: <span class="cc-value">Sunny</span></li>
-                    <li>Temperature: <span class="cc-value" id="current-temp">77&deg; F</span></li>
-                    <li>Humidity: <span class="cc-value">69%</span></li>
-                    <li>Precipitation: <span class="cc-value">0 inches</span></li>
-                    <li>Wind Speed: <span class="cc-value" id="wind-speed">5 mph</span></li>
-                    <li>Wind Chill: <span class="cc-value" id="wind-chill"></span></li>
-                </ul>
-            </aside>
-            <img src="images/hero.jpg" alt="hero image" srcset="images/hero-400.jpg 400w, images/hero-1000.jpg 1000w" sizes="(max-width: 500px) 100vw, (max-width: 1000px) 70vw">
+        <h1>Weather Gallery</h1>
+        <div class="gallery">
+            <div class="gallery-image">
+                <figure>
+                    <img src="images/gallery1.jpg" alt="gallery image 1">
+                    <figcaption>Beautiful rainbow after a storm</figcaption>
+                </figure>
+            </div>
+            <div class="gallery-image">
+                <figure>
+                    <img src="images/gallery2.jpg" alt="gallery image 2">
+                    <figcaption>Sun peeking through on a cloudy day</figcaption>
+                </figure>
+            </div>
+            <div class="gallery-image">
+                <figure>
+                    <img src="images/gallery3.jpg" alt="gallery image 3">
+                    <figcaption>The park on a winter morning</figcaption>
+                </figure>
+            </div>
+            <div class="gallery-image">
+                <figure>
+                    <img src="images/gallery4.jpg" alt="gallery image 4">
+                    <figcaption>The sun as a spotlight</figcaption>
+                </figure>
+            </div>
+            <div class="gallery-image">
+                <figure>
+                    <img src="images/gallery5.jpg" alt="gallery image 5">
+                    <figcaption>A blanket of fresh snow</figcaption>
+                </figure>
+            </div>
+            <div class="gallery-image">
+                <figure>
+                    <img src="images/gallery6.jpg" alt="gallery image 6">
+                    <figcaption>Amazing electical storm</figcaption>
+                </figure>
+            </div>
         </div>
-        <article>
-            <h3 class="article-title">Founders Day Fresco</h3>
-            <p class="article-author">by Janica Juarez</p>
-            <p><img src="images/campfire-400x400.jpg" alt="campfire image">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus metus aliquam eleifend
-                mi in nulla posuere sollicitudin. Tellus id interdum velit laoreet id donec ultrices. Pharetra vel turpis nunc eget lorem dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Purus in mollis nunc sed. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Tellus id interdum velit laoreet id donec ultrices. Pharetra vel turpis nunc eget lorem dolor. Cursus metus aliquam eleifend mi in
-                nulla posuere sollicitudin. Tellus id interdum velit laoreet id donec ultrices. Pharetra vel turpis nunc eget lorem dolor.</p>
-        </article>
     </main>
 
     <footer>
@@ -88,7 +105,6 @@
 
     <script src="js/current-date.js"></script>
     <script src="js/hamburger.js"></script>
-    <script src="js/wind-chill.js"></script>
 
 </body>
 

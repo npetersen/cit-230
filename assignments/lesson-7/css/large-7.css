@@ -16,12 +16,12 @@
         margin-top: 0;
     }
     .navigation li {
-        /* display: inline-block; */
+        display: inline-block;
         font-size: 1.2em;
         line-height: 1.8em;
     }
     .navigation a {
-        /* display: block; */
+        display: block;
         color: #fff;
         padding: 1rem 1.5rem;
         text-align: center;
@@ -56,4 +56,19 @@
         vertical-align: middle;
         margin: 1.2em;
     }
+    
+}
+
+@media (min-width: 1300px) {
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+    }
+
+    .gallery-image figure:hover {
+        box-shadow: 6px 9px 15px 0 rgba(0,0,0,0.49);
+    }
+
 }
