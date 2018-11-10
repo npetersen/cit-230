@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1">
+    <meta name="description" content="Weather Web Site">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link rel="stylesheet" href="css/small-7.css">
+    <link rel="stylesheet" href="css/medium-7.css">
+    <link rel="stylesheet" href="css/large-7.css">
+    <title>Weather or Not - Storm Center</title>
+    <style>
+
+        form .field-group {
+  display: flex;
+  margin: 0 0 12px 0;
+}
+
+form .field-group .label {
+  flex: 1;
+  text-align: right;
+  margin: 0 8px 0 0;
+  padding: 2px 0;
+}
+
+form .field-group .field {
+  flex: 3;
+}
+
+form .field-group:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+form .field-group:last-child .field {
+  max-width: 75%;
+}
+
+input, select, textarea {
+  padding: .6rem 1rem;
+  font-size: 1.6rem;
+  border: solid 1px #036;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 80%;
+}
+
+input, select {
+  width: 50%;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="submit"] {
+  width: auto;
+}
+
+input[type="submit"] {
+    color: #fff;
+    background-color: orange;
+}
+
+@media (max-width: 720px) {
+  form .field-group .label {
+    text-align: left;
+    margin: 0;
+  }
+
+  input, select {
+    width: 60%;
+  }
+}
+@media (max-width: 480px) {
+  input,
+  select {
+    width: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"],
+  input[type="submit"] {
+    width: auto;
+  }
+
+  form .field-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 6px 0;
+  }
+
+  form .field-group .label {
+    padding: 0 0 5px 0;
+    margin: 10px 0 0 0;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/sun.png" alt="logo">
+        </div>
+        <div class="header-text">
+            <h1>Weather or Not</h1>
+            <h4>Weather or Not Site Tagline</h4>
+        </div>
+        <div class="current-conditions">
+            <img src="images/sun.png" alt="current conditions weather icon">
+            <p>Sunny 79&deg;</p>
+        </div>
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Storm Center</h1>
+        <form method="GET" action="thanks.html">
+            <div class="field-group">
+                <label for="full-name" class="label">Full Name:</label>
+                <div class="field">
+                    <input name="full-name" id="full-name" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z ]{5,30}" required>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label for="email" class="label">Email:</label>
+                <div class="field">
+                    <input name="email" id="email" type="email" value="" placeholder="user@domain.com">
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label for="phone-number" class="label">Phone Number:</label>
+                <div class="field">
+                    <input name="phone-number" id="phone-number" type="tel" value="" placeholder="Phone Number" required>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label for="zip-code" class="label">Zip Code:</label>
+                <div class="field">
+                    <input name="zip-code" id="zip-code" type="number" value="" placeholder="Zip Code" required>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label for="storm-date" class="label">Storm Date:</label>
+                <div class="field">
+                    <input name="storm-date" id="storm-date" type="date" value="" placeholder="" required>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label for="storm-type" class="label">Storm Type:</label>
+                <div class="field">
+                    <input list="storm-type" name="storm-type" id="storm-type-input" value="" placeholder="">
+                </div>
+                <datalist id="storm-type">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+            </div>
+
+            <div class="field-group">
+                <label for="storm-severity" class="label">Storm Severity (1 - 10):</label>
+                <div class="field">
+                    <input type="range" name="storm-severity" id="storm-severity" value="5" min="1" max="10" step="1">
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label for="storm-region" class="label">Storm Region:</label>
+                <div class="field">
+                    <select name="storm-region" id="storm-region">
+                        <option disabled selected>Select Region</option>
+                        <option value="franklin">Franklin</option>
+                        <option value="greenville">Greenville</option>
+                        <option value="springfield">Springfield</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="label">In Danger:</div>
+                <div class="field">
+                    <div>
+                        <input id="in-danger-yes" name="in-danger" type="radio" value="yes">
+                        <label for="in-danger-yes">Yes</label>
+                    </div>
+                    <div>
+                        <input id="in-danger-maybe" name="in-danger" type="radio" value="maybe">
+                        <label for="in-danger-maybe">Maybe</label>
+                    </div>
+                    <div>
+                        <input id="in-danger-no" name="in-danger" type="radio" value="no">
+                        <label for="in-danger-no">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label for="comments" class="label">Comments:</label>
+                <div class="field">
+                    <textarea id="comments" name="comments" spellcheck="true" rows="10" cols="20" placeholder="Comments"></textarea>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="field">
+                    <input id="saveForm" name="saveForm" type="submit" value="Report Your Storm">
+                </div>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <img src="images/team-building.jpg" alt="Weather or Not Team" class="footer-img">
+        <div class="footer-text">
+            <h4>Weather or Not</h4>
+            <address>
+                1122 Boogie Boogie Ave<br>
+                Anytown, UT 84015
+            </address>
+            <p>
+                <a href="tel:8018889999">Phone: (801) 888-9999</a><br>
+                <a href="mailto:someone@domain.com">Email: someone@domain.com</a>
+            </p>
+        </div>
+        <div class="footer-map">
+            <img src="images/preston-idaho-map.png" alt="Location Map" class="footer-map">
+        </div>
+        <div class="footer-disclosures">
+            <p>&copy;<span id="current-date"></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Nate
+                Petersen&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="mailto:pet15036@byui.edu">pet15036@byui.edu</a></p>
+        </div>
+    </footer>
+
+    <script src="js/current-date.js"></script>
+    <script src="js/hamburger.js"></script>
+
+</body>
+
+</html>
