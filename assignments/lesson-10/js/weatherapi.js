@@ -28,7 +28,7 @@ function populateWeatherData(json) {
     if (currentTemp) { currentTemp.innerHTML = Math.round(weatherData.main.temp) + "&deg; F"; }
     if (currentHumidity) { currentHumidity.innerHTML = weatherData.main.humidity + "%"; }
     if (currentPrecip && weatherData.hasOwnProperty('rain')) { 
-        currentPrecip.innerHTML = weatherData.rain['1h']; 
+        currentPrecip.innerHTML = weatherData.rain['1h'] + " inches"; 
     } else {
         currentPrecip.innerHTML = "Not Available"
     }
