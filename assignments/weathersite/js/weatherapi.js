@@ -63,7 +63,7 @@ function populateForecastData(json) {
     var date = new Date();
     var today = date.getDay();
     var days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
-    var tbody = document.getElementById('forecast').children[2];
+    var tbody = document.getElementById('forecast').children[2].children[0];
     var fiveDayForecast = [];
 
     for (var i = 0; i < forecastData.list.length; i++) {
