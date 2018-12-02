@@ -1,0 +1,80 @@
+@media (min-width: 501px) {
+    header,
+    .navigation {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        background-color: #036;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 0;
+    }
+    .navigation li {
+        display: inline-block;
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
+    .navigation a {
+        display: block;
+        color: #fff;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        text-decoration: none;
+    }
+    .navigation a:hover, .current {
+        color: #fff;
+        background-color: #1ccad8;
+    }
+    .current-conditions img {
+        width: 100%;
+        height: auto;
+    }
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+    main,
+    footer {
+        width: 70%;
+        margin: auto;
+    }
+    article img {
+        float: right;
+        max-width: 25%;
+        height: auto;
+        margin: -50px 0 0 30px;
+    }
+    footer .footer-img {
+        max-width: 25%;
+        height: auto;
+        vertical-align: middle;
+        margin: 1.2em;
+    }
+    aside {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 25%;
+    }
+    
+}
+
+@media (min-width: 1300px) {
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+    }
+
+    .gallery-image figure:hover {
+        box-shadow: 6px 9px 15px 0 rgba(0,0,0,0.49);
+    }
+
+}

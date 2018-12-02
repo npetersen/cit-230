@@ -2,15 +2,16 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1">
-    <meta name="description" content="Weather Web Site">
+    <meta name="description" content="Weather or Not. Your source for up to the minute, accurate weather information to help plan your day">
+     <meta name="keywords" content="Weather, up to the minute weather forecast, forecast, outdoor recreation, make plans, local weather forecast">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
-    <link rel="stylesheet" href="css/small-7.css">
-    <link rel="stylesheet" href="css/medium-7.css">
-    <link rel="stylesheet" href="css/large-7.css">
-    <title>Weather or Not - Preston</title>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Weather or Not - Weather Images Gallery</title>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
             <h4>Weather or Not Site Tagline</h4>
         </div>
         <div class="current-conditions">
-            <img src="images/sun.png" alt="current conditions weather icon">
+            <img id="weather-icon" src="images/sun.png" alt="current conditions weather icon">
             <p>Sunny 79&deg;</p>
         </div>
         <button class="hamburger" onclick="toggleHam()">&#9776;</button>
@@ -32,9 +33,9 @@
     <nav>
         <ul class="navigation">
             <li><a href="index.html">Home</a></li>
-            <li><a href="preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="town.html?id=5604473">Preston</a></li>
+            <li><a href="town.html?id=5607916">Soda Springs</a></li>
+            <li><a href="town.html?id=5585010">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
