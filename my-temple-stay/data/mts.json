@@ -1,0 +1,206 @@
+{
+    "temples" : [
+        {
+            "id" : 5779206, 
+            "name" : "Ogden", 
+            "address" : {
+                "address1" : "350 22nd St", 
+                "address2" : "", 
+                "city" : "Ogden", 
+                "state" : "UT", 
+                "zip" : "84401", 
+                "zip_4" : "-1478"
+            }, 
+            "phone" : "801-621-6880", 
+            "email" : "ogden.temple@lds.org", 
+            "services" : [
+                "Clothing Rental Available", 
+                "Cafeteria Available", 
+                "No Patron Housing Available", 
+                "Distribution Center Nearby"
+            ], 
+            "images" : [
+                "img/ogd-ut-1.jpg", 
+                "img/ogd-ut-2.jpg", 
+                "img/ogd-ut-3.jpg"
+            ], 
+            "history" : [
+                "Announced: August 24, 1967", 
+                "Groundbreaking: September 8, 1969", 
+                "Dedicated: January 18, 1972", 
+                "Rededicated: September 21, 2014"
+            ], 
+            "closures" : [
+                "Tuesday, December 25, 2018", 
+                "Tuesday, January 1, 2019", 
+                "Monday, March 11, 2019 - Monday, March 25, 2019", 
+                "Saturday, April 6, 2019", 
+                "Saturday, May 18, 2019", 
+                "Thursday, July 4, 2019", 
+                "Wednesday, July 24, 2019", 
+                "Monday, September 9, 2019 - Monday, September 23, 2019", 
+                "Saturday, October 5, 2019", 
+                "Thursday, October 31, 2019 (Limited Hours)", 
+                "Wednesday, November 27, 2019 (Limited Hours)", 
+                "Thursday, November 28, 2019", 
+                "Tuesday, December 24, 2019 - Wednesday, December 25, 2019", 
+                "Tuesday, December 31, 2019" 
+            ], 
+            "session_schedule" : [
+
+            ], 
+            "ordinance_schedule" : [
+
+            ]
+        }, 
+        {
+            "id" : 5780993, 
+            "name" : "Salt Lake", 
+            "address" : {
+                "address1" : "50 W North Temple St", 
+                "address2" : "", 
+                "city" : "Salt Lake City", 
+                "state" : "UT", 
+                "zip" : "84150", 
+                "zip_4" : "-9709"
+            }, 
+            "phone" : "801-240-2640", 
+            "email" : "saltlake.temple@lds.org" , 
+            "services" : [
+                "Clothing Rental Available", 
+                "Cafeteria Available", 
+                "No Patron Housing Available", 
+                "Distribution Center Nearby"
+            ], 
+            "images" : [
+                "img/slc-ut-1.jpg", 
+                "img/slc-ut-2.jpg", 
+                "img/slc-ut-3.jpg"
+            ], 
+            "history" : [
+                "Announced: July 28, 1847", 
+                "Groundbreaking: February 14, 1853", 
+                "Dedicated: April 6, 1893"
+            ], 
+            "closures" : [
+                "Tuesday, January 1, 2019 - Monday, January 28, 2019", 
+                "Saturday, April 6, 2019", 
+                "Tuesday, July 2, 2019 - Monday, July 15, 2019", 
+                "Wednesday, July 24, 2019", 
+                "Saturday, October 5, 2019", 
+                "Wednesday, November 27, 2019 (Limited Hours)", 
+                "Thursday, November 28, 2019 - Friday, November 29, 2019", 
+                "Tuesday, December 24, 2019 - Wednesday, December 25, 2019", 
+                "Tuesday, December 31, 2019"
+            ], 
+            "session_schedule" : [
+
+            ], 
+            "ordinance_schedule" : [
+
+            ]
+        },
+        {
+            "id" : 5771960, 
+            "name" : "Brigham City", 
+            "address" : {
+                "address1" : "250 S Main St", 
+                "address2" : "", 
+                "city" : "Brigham City", 
+                "state" : "UT", 
+                "zip" : "84302", 
+                "zip_4" : "-2560"
+            }, 
+            "phone" : "435-695-2170", 
+            "email" : "brighamcity.temple@lds.org" , 
+            "services" : [
+                "No clothing rental available",
+                "No cafeteria available", 
+                "No patron housing available", 
+                "Distribution center nearby"
+            ], 
+            "images" : [
+                "img/bc-ut-1.jpg", 
+                "img/bc-ut-2.jpg", 
+                "img/bc-ut-3.jpg"
+            ], 
+            "history" : [
+                "Announced: October 3, 2009", 
+                "Groundbreaking: July 31, 2010", 
+                "Dedicated: September 23, 2012"
+            ], 
+            "closures" : [
+                "Tuesday, January 1, 2019", 
+                "Monday, February 25, 2019 - Monday, March 11, 2019", 
+                "Saturday, April 6, 2019", 
+                "Thursday, July 4, 2019", 
+                "Wednesday, July 24, 2019", 
+                "Monday, August 5, 2019 - Monday, August 19, 2019", 
+                "Friday, September 6, 2019 (Limited Hours)", 
+                "Saturday, September 7, 2019", 
+                "Saturday, October 5, 2019", 
+                "Wednesday, November 27, 2019 (Limited Hours)", 
+                "Thursday, November 28, 2019", 
+                "Tuesday, December 24, 2019", 
+                "Wednesday, December 25, 2019", 
+                "Tuesday, December 31, 2019 (Limited Hours)"
+            ], 
+            "session_schedule" : [
+
+            ], 
+            "ordinance_schedule" : [
+
+            ]
+        }, 
+        {
+            "id" : 5771826, 
+            "name" : "Bountiful", 
+            "address" : {
+                "address1" : "640 S Bountiful Blvd", 
+                "address2" : "", 
+                "city" : "Bountiful", 
+                "state" : "UT", 
+                "zip" : "84010", 
+                "zip_4" : "-1394"
+            }, 
+            "phone" : "801-296-2100", 
+            "email" : "bountiful.temple@lds.org" , 
+            "services" : [
+                "Clothing Rental Available", 
+                "Cafeteria Available", 
+                "No Patron Housing Available", 
+                "Distribution Center Nearby"
+            ], 
+            "images" : [
+                "img/bntfl-ut-1.jpg", 
+                "img/bntfl-ut-2.jpg", 
+                "img/bntfl-ut-3.jpg"
+            ], 
+            "history" : [
+                "Announced: February 2, 1990", 
+                "Groundbreaking: May 2, 1992", 
+                "Dedicated: January 8, 1995"
+            ], 
+            "closures" : [
+                "Tuesday, January 1, 2019", 
+                "Monday, February 11, 2019 - Monday, February 25, 2019", 
+                "Saturday, April 6, 2019", 
+                "Thursday, July 4, 2019", 
+                "Monday, July 22, 2019 - Monday, August 5, 2019", 
+                "Saturday, October 5, 2019", 
+                "Wednesday, November 27, 2019 (Limited Hours)", 
+                "Thursday, November 28, 2019", 
+                "Tuesday, December 24, 2019", 
+                "Wednesday, December 25, 2019", 
+                "Tuesday, December 31, 2019"
+            ], 
+            "session_schedule" : [
+
+            ], 
+            "ordinance_schedule" : [
+
+            ]
+        }
+
+    ]
+}
