@@ -4,7 +4,8 @@ body {
     font: 16px 'Muli', sans-serif;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: #fff;
     font-weight: 700;
     transition: .2s color ease-in-out;
@@ -38,11 +39,11 @@ header {
     align-items: center;
 }
 
-.nav-list > li {
+.nav-list>li {
     position: relative;
 }
 
-.nav-list > li:not(.has-logo) > a {
+.nav-list>li:not(.has-logo)>a {
     text-transform: uppercase;
     display: block;
     padding: 1rem;
@@ -66,7 +67,7 @@ header {
     text-align: left;
 }
 
-.nav-list > li:hover a + ul {
+.nav-list>li:hover a+ul {
     left: 0;
     top: 100%;
 }
@@ -82,28 +83,30 @@ header {
 }
 
 .cta-home {
-	background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25',GradientType=0);
-	background-color: #ffc477;
-	border-radius: 5px;
-	border: 1px solid #eeb44f;
-	display: inline-block;
-	cursor: pointer;
-	color: #ffffff;
-	font-size: 18px;
-	font-weight: bold;
-	padding: 15px 25px;
+    background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25', GradientType=0);
+    background-color: #ffc477;
+    border-radius: 5px;
+    border: 1px solid #eeb44f;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 25px;
     text-decoration: none;
     margin: 1rem 0;
 }
+
 .cta-home:hover {
-	background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477',GradientType=0);
-	background-color: #fb9e25;
+    background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477', GradientType=0);
+    background-color: #fb9e25;
 }
+
 .cta-home:active {
-	position: relative;
-	top: 1px;
+    position: relative;
+    top: 1px;
 }
 
 .landing-featured-contact {
@@ -116,7 +119,9 @@ header {
     padding: 1rem;
 }
 
+
 /* large */
+
 @media only screen and (min-width: 941px) {
     .landing-content-container {
         position: absolute;
@@ -126,7 +131,6 @@ header {
         transform: translate(-50%, -50%);
         max-width: 50%;
     }
-
     .landing-featured-contact {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -134,26 +138,24 @@ header {
     }
 }
 
+
 /* medium/large  */
+
 @media only screen and (max-width: 58.75rem) {
     html {
         font-size: 13px;
     }
-
     body {
         width: 80%;
     }
-
     .has-logo {
         display: none;
     }
-
     .mobile-display {
         display: block;
         margin: 0 auto;
         text-align: center;
     }
-
     .landing-content-container {
         position: absolute;
         top: 55%;
@@ -162,7 +164,6 @@ header {
         transform: translate(-50%, -50%);
         max-width: 50%;
     }
-
     .landing-featured-contact {
         display: grid;
         grid-template-columns: 100%;
@@ -170,7 +171,9 @@ header {
     }
 }
 
+
 /* small */
+
 @media only screen and (max-width: 33.68rem) {
     .toggle-menu {
         display: block;
@@ -186,7 +189,6 @@ header {
         border-radius: .25rem;
         font-size: 25px;
     }
-
     .nav-list {
         display: block;
         /* width: 100%; */
@@ -195,32 +197,27 @@ header {
         z-index: 1012;
         left: 0;
         top: 0;
-        background-color:#000;
+        background-color: #000;
         max-height: 0;
         overflow: hidden;
     }
-
     .nav-list ul {
         background-color: transparent !important;
     }
-
     .active {
         max-height: 100%;
-    }   
-
+    }
     .nav-list ul {
         position: static;
         text-indent: 2rem;
         z-index: 1013;
     }
-
     .landing-content-container {
         position: absolute;
         top: 575px;
         max-width: 80%;
         z-index: -1;
     }
-
     .landing-featured-contact {
         display: grid;
         grid-template-columns: 100%;
