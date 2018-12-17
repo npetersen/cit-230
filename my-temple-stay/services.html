@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="Services of My Temple Stay. A hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.">
+        <meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+        <link rel="stylesheet" href="css/content-page-layout.css">
+        <link rel="stylesheet" href="css/main-nav.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <title>My Temple Stay | Services and Amenities</title>
+    </head>
+
+    <body>
+        
+        <div class="mobile-display">
+            <h2 class="site-title">
+                <a href="#">
+                    <img src="img/mts-logo-2.png" alt="My Temple Stay">
+                </a>
+            </h2>
+        </div>
+
+        <header class="main-nav">
+                <nav>
+                        <a href="#" class="toggle-menu">&#9776;</a>
+                        <ul class="nav-list nav-open" id="nav">
+                            <li>
+                                <a href="reservations.html">Reservations</a>
+                            </li>
+                            <li>
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li class="has-logo">
+                                <a href="index.html">
+                                    <h2 class="site-title">
+                                        <img src="img/mts-logo-2.png" alt="My Temple Stay">
+                                    </h2>
+                                </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#">Temples</a>
+                                <ul>
+                                    <li><a href="temple.html?id=5771960">Brigham City</a></li>
+                                    <li><a href="temple.html?id=5779206">Ogden</a></li>
+                                    <li><a href="temple.html?id=5771826">Bountiful</a></li>
+                                    <li><a href="temple.html?id=5780993">Salt Lake</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+        </header>
+
+        <div class="container">
+
+            <header class="sub-head">
+                <h1>Services & Amenities</h1>
+            </header>
+
+            <article>
+                <p>My Temple Stay provides the most essential, as well as upscale services and amenities typically only found in accommodations costing much more. Whether your stay with us for only 1 or 2 nights, or your planning on staying for an extended period of time, we will make you feel like you've never left the comforts of home.</p>
+                <p>The following is a list of our standard guest services</p>
+                <ul>
+                    <li>Free access to changing rooms and bathroom facilities for temple patrons who need to change to and from church clothes</li>
+                    <li>Day-care room and low cost, short-term babysitting services for the children of patrons</li>
+                    <li>Long term stay accommodations in kitchenette suites for full-time temple missionaries</li>
+                    <li>Temple history themed reception and sitting area</li>
+                    <li>Wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</li>
+                    <li>Business center that supports family search and ordinance work</li>
+                </ul>
+                <p>Amenities provided to all guests</p>
+                <ul>
+                    <li>breakfast</li>
+                    <li>exercise/workout room</li>
+                    <li>indoor pool</li>
+                    <li>WiFi high-speed internet access and smart tvs</li>
+                    <li>free long-term parking</li>
+                    <li>family history consultation and family ordinance card services</li>
+                </ul>
+            </article>
+            
+            <aside>
+                <h3>For Full Time Missionaries</h3>
+                <p>We are now able to offer indefinite stay accommodations at select locations to full time missionaries.</p>
+                <p>We can provide suite, as well as studio size rooms complete with kitchen facilities. See below for a sampling of what may be available to you.</p>
+                <div class="room-slideshow"></div>
+                <h3>Contact us for more information</h3>
+                <form>
+                    <ul class="flex-form">
+                        <li><label for="first-name">First Name</label><input type="text" id="first-name" placeholder="Enter your first name"></li>
+                        <li><label for="last-name">Last Name</label><input type="text" id="last-name" placeholder="Enter your last name"></li>
+                        <li><label for="email">Email</label><input type="email" id="email" placeholder="Enter your email"></li>
+                        <li><label for="phone">Phone</label><input type="tel" id="phone" placeholder="Enter your phone"></li>
+                        <li><label for="message">Message</label><textarea rows="6" id="message" placeholder="Enter your message"></textarea></li>
+                        <li><button class="cta-home" type="submit">Get In Touch!</button></li>
+                    </ul>
+                </form>
+            </aside>
+            
+            <footer>
+                <p>Footer</p>
+            </footer>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.backstretch-overlay.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function() {
+                var ulNav = "#nav";
+                var openNav = "active";
+
+                $('.toggle-menu').click(function(e) {
+                    if ($(ulNav).hasClass(openNav)) {
+                        $(ulNav).removeClass(openNav);
+                    } else {
+                        $(ulNav).addClass(openNav);
+                    }
+                    e.preventDefault();
+                });
+
+                $('.room-slideshow').backstretch([
+                    "img/room-img-1.jpg", 
+                    "img/room-img-2.jpg", 
+                    "img/room-img-3.jpg", 
+                    "img/room-img-4.jpg"
+                ], { 
+                    duration: 4000, 
+                    fade: "normal", 
+                    overlay: {
+                        init: false,
+                        background: "#111111", 
+                        opacity: 0.7
+                    }
+                });
+            })
+        </script>
+
+    </body>
+
+</html>

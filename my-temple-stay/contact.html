@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Contact My Temple Stay. A hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.">
+        <meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+        <link rel="stylesheet" href="css/content-page-layout.css">
+        <link rel="stylesheet" href="css/main-nav.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <title>My Temple Stay | Contact Us</title>
+    </head>
+
+    <body>
+        
+        <div class="mobile-display">
+            <h2 class="site-title">
+                <a href="#">
+                    <img src="img/mts-logo-2.png" alt="My Temple Stay">
+                </a>
+            </h2>
+        </div>
+
+        <header class="main-nav">
+            <nav>
+                <a href="#" class="toggle-menu">&#9776;</a>
+                <ul class="nav-list nav-open" id="nav">
+                    <li>
+                        <a href="reservations.html">Reservations</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li class="has-logo">
+                        <a href="index.html">
+                            <h2 class="site-title">
+                                <img src="img/mts-logo-2.png" alt="My Temple Stay">
+                            </h2>
+                        </a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Temples</a>
+                        <ul>
+                            <li><a href="temple.html?id=5771960">Brigham City</a></li>
+                            <li><a href="temple.html?id=5779206">Ogden</a></li>
+                            <li><a href="temple.html?id=5771826">Bountiful</a></li>
+                            <li><a href="temple.html?id=5780993">Salt Lake</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+
+            <header class="sub-head">
+                <h1>Contact Us</h1>
+            </header>
+
+            <article>
+                <p>My Temple Stay is owned and operated by Temple Inn & Suites, a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. The owner-operated company caters to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. The hotel accommodations and services are available to anyone willing to abide by the terms and policies outlined by the company.</p>
+                <div class="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1545018045184" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </article>
+            
+            <aside>
+                <h3>Get in Touch</h3>
+                <ul>
+                    <li>Give us a call: <a href="tel:(800) 999-9999">1 (800) 999-9999</a></li>
+                    <li>Send us a messaage: <a href="mailto:info@mytemplestay.com">info@mytemplestay.com</a></li>
+                    <li>
+                        Drop us a line:<br>
+                        <address>
+                            4800 Montgomery Ln #300<br>
+                            Bethesda, MD 20814
+                        </address>
+                    </li>
+                </ul>
+                <h3>What Can We Help You With?</h3>
+                <form>
+                    <ul class="flex-form">
+                        <li><label for="first-name">First Name</label><input type="text" id="first-name" placeholder="Enter your first name"></li>
+                        <li><label for="last-name">Last Name</label><input type="text" id="last-name" placeholder="Enter your last name"></li>
+                        <li><label for="email">Email</label><input type="email" id="email" placeholder="Enter your email"></li>
+                        <li><label for="phone">Phone</label><input type="tel" id="phone" placeholder="Enter your phone"></li>
+                        <li><label for="message">Message</label><textarea rows="6" id="message" placeholder="Enter your message"></textarea></li>
+                        <li><button class="cta-home" type="submit">Get In Touch!</button></li>
+                    </ul>
+                </form>
+            </aside>
+            
+            <footer>
+                <p>Footer</p>
+            </footer>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.backstretch-overlay.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function() {
+                var ulNav = "#nav";
+                var openNav = "active";
+
+                $('.toggle-menu').click(function(e) {
+                    if ($(ulNav).hasClass(openNav)) {
+                        $(ulNav).removeClass(openNav);
+                    } else {
+                        $(ulNav).addClass(openNav);
+                    }
+                    e.preventDefault();
+                });
+
+            })
+        </script>
+
+    </body>
+
+</html>

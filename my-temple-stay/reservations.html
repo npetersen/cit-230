@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="Make a Reservation with My Temple Stay. A hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.">
+        <meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+        <link rel="stylesheet" href="css/content-page-layout.css">
+        <link rel="stylesheet" href="css/main-nav.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <title>My Temple Stay | Make a Reservation</title>
+    </head>
+
+    <body>
+        
+        <div class="mobile-display">
+            <h2 class="site-title">
+                <a href="#">
+                    <img src="img/mts-logo-2.png" alt="My Temple Stay">
+                </a>
+            </h2>
+        </div>
+
+        <header class="main-nav">
+            <nav>
+                <a href="#" class="toggle-menu">&#9776;</a>
+                <ul class="nav-list nav-open" id="nav">
+                    <li>
+                        <a href="reservations.html">Reservations</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li class="has-logo">
+                        <a href="index.html">
+                            <h2 class="site-title">
+                                <img src="img/mts-logo-2.png" alt="My Temple Stay">
+                            </h2>
+                        </a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Temples</a>
+                        <ul>
+                            <li><a href="temple.html?id=5771960">Brigham City</a></li>
+                            <li><a href="temple.html?id=5779206">Ogden</a></li>
+                            <li><a href="temple.html?id=5771826">Bountiful</a></li>
+                            <li><a href="temple.html?id=5780993">Salt Lake</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+
+            <header class="sub-head">
+                <h1>Make a Reservation</h1>
+            </header>
+
+            <article>
+                <p>Making a reservation with My Temple Stay is easy! Just fill out the reservation form and we'll have everything set up for you when you arrive!</p>
+                <form action="thank-you.html">
+                    <ul class="flex-form">
+                        <li>
+                            <label for="location">Location</label>
+                            <select name="location" id="location">
+                                <option value="ogden">Ogden, UT</option>
+                                <option value="brigham">Brigham City, UT</option>
+                                <option value="bountiful">Bountiful, UT</option>
+                                <option value="salt_lake">Salt Lake, UT</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="room-type">Room Type</label>
+                            <select name="room-type" id="room-type">
+                                <option value="standard">Standard Room</option>
+                                <option value="suite">Suite</option>
+                                <option value="studio">Studio</option>
+                            </select>
+                        </li>
+                        <li><label for="num-rooms">Number of Rooms</label><input type="number" name="num-rooms" id="num-rooms" placeholder="How many rooms do you need?"></li>
+                        <li><label for="date">Date</label><input type="date" name="date" id="date" placeholder="Select a date"></li>
+                        <li><label for="full-name">Full Name</label><input type="text" name="full-name" id="full-name" placeholder="Enter your full name"></li>
+                        <li><label for="home-location">Home State or Country</label><input type="text" name="home-location" id="home-location" placeholder="Enter your home location"></li>
+                        <li><label for="email">Email</label><input type="email" name="email" id="email" placeholder="Enter your email"></li>
+                        <li><label for="phone">Phone</label><input type="tel" name="phone" id="phone" placeholder="Enter your phone"></li>
+                        <li><label for="message">Comments</label><textarea rows="6" name="message" id="message" placeholder="Enter your message"></textarea></li>
+                        <li><button class="cta-home" type="submit">Make Your Reservation!</button></li>
+                    </ul>
+                </form>
+            </article>
+            
+            <aside>
+                <h3>Need Help? Get in Touch.</h3>
+                <ul>
+                    <li>Give us a call: <a href="tel:(800) 999-9999">1 (800) 999-9999</a></li>
+                    <li>Send us a messaage: <a href="mailto:info@mytemplestay.com">info@mytemplestay.com</a></li>
+                    <li>
+                        Drop us a line:<br>
+                        <address>
+                            4800 Montgomery Ln #300<br>
+                            Bethesda, MD 20814
+                        </address>
+                    </li>
+                </ul>
+            </aside>
+            
+            <footer>
+                <p>Footer</p>
+            </footer>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.backstretch-overlay.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function() {
+                var ulNav = "#nav";
+                var openNav = "active";
+
+                $('.toggle-menu').click(function(e) {
+                    if ($(ulNav).hasClass(openNav)) {
+                        $(ulNav).removeClass(openNav);
+                    } else {
+                        $(ulNav).addClass(openNav);
+                    }
+                    e.preventDefault();
+                });
+
+            })
+        </script>
+
+    </body>
+
+</html>

@@ -37,7 +37,7 @@ pageDataRequest.onload = function() {
         fade: "normal", 
         overlay: {
             init: true,
-            background: "#222222", 
+            background: "#111111", 
             opacity: 0.7
         }
     });
