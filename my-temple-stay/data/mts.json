@@ -51,7 +51,8 @@
             ], 
             "ordinance_schedule" : [
 
-            ]
+            ], 
+            "description" : "The Ogden Utah Temple (formerly the Ogden Temple) is the sixteenth constructed and fourteenth operating temple of The Church of Jesus Christ of Latter-day Saints (LDS Church). Located in Ogden, Utah, it was originally built with a modern, single-spire design very similar to the Provo Utah Temple. During a renovation completed in 2014, the exterior and interior were extensively changed."
         }, 
         {
             "id" : 5780993, 
@@ -98,7 +99,8 @@
             ], 
             "ordinance_schedule" : [
 
-            ]
+            ], 
+            "description" : "The Salt Lake Temple was announced on July 28, 1847, but it took 40 years to build, from 1853 to 1893. With walls nine feet thick at the base and six feet thick at the top, this impressive six-spire structure serves as a universal icon of The Church of Jesus Christ of Latter-Day Saints."
         },
         {
             "id" : 5771960, 
@@ -150,7 +152,8 @@
             ], 
             "ordinance_schedule" : [
 
-            ]
+            ], 
+            "description" : "The Brigham City Utah Temple is a temple of The Church of Jesus Christ of Latter-day Saints (LDS Church) in Brigham City, Utah. The temple was announced by church president Thomas S. Monson on October 3, 2009, during the church's general conference.[3] The temple was announced concurrently with those to be constructed in Concepción, Chile, Fort Lauderdale, Florida, Fortaleza, Brazil and Sapporo, Japan; at the time, the announcement brought the total number of temples worldwide to 151 (including those under construction and announced). It is the fourteenth temple of the LDS Church completed in Utah."
         }, 
         {
             "id" : 5771826, 
@@ -199,7 +202,8 @@
             ], 
             "ordinance_schedule" : [
 
-            ]
+            ], 
+            "description" : "The Bountiful Temple is the eighth temple constructed in the state of Utah. The history of the temple site began back in 1897, when John Haven Barlow Sr. purchased 40 acres (160,000 m2) of land from the United States government. Because of lack of water and the steep terrain, little could be done with the land. In 1947 some of the land was cleared and four hundred apricot trees were planted. In the spring of 1983, flash flooding caused a great deal of damage in Bountiful, resulting in the decision to build a dam across the canyon to limit the flow of water during heavy rainstorms. The city requested the use of the soil from the future temple site, so construction crews removed over two hundred thousand cubic yards of soil, leaving the area an ideal spot on which the LDS temple would later be built."
         }
 
     ]

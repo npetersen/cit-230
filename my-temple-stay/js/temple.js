@@ -24,13 +24,13 @@ weatherRequest.send();
 
 pageDataRequest.onload = function() {
 
-    var randImg = Math.floor(Math.random() * 3) + 0;
+    var randNum = Math.floor(Math.random() * 3) + 0;
     var pageData = pageDataRequest.response;
     pageData = pageData.temples.find(x => x.id == templeID);
     populatePageContent(pageData);
     console.log(pageData);
     
-    $.backstretch(pageData.images[randImg], { 
+    $.backstretch(pageData.images[randNum], { 
         duration: 4000, 
         fade: "normal", 
         overlay: {
@@ -53,11 +53,32 @@ pageDataRequest.onload = function() {
 function populatePageContent(json) {
     var templeName = json.name;
     var titleText = "Details About The " + templeName + " Temple";
+    var templeSvcSection = document.getElementById('temple-services-list');
+    var templeSvcUL = document.createElement('ul');
+    var templeCloseSection = document.getElementById('temple-closure-list');
+    var templeClseUL = document.createElement('ul');
 
     document.title = "My Temple Stay | " + titleText;
     $('#temple-page-h1').html("The " + templeName + " Temple");
     $('#temple-info-h3').html(templeName + " Temple Information");
     $('#temple-address').html(json.address.address1 + "<br>" + json.address.city + ", " + json.address.state + " " + json.address.zip + json.address.zip_4);
+    $('#temple-phone').html(json.phone);
+    $('#temple-email').html(json.email);
+
+    for (iSvc = 0; iSvc < json.services.length; iSvc++) {
+        var svcItem = document.createElement('li');
+        svcItem.textContent = json.services[iSvc];
+        templeSvcUL.appendChild(svcItem);
+    }
+
+    for (iCls = 0; iCls < json.closures.length; iCls++) {
+        var clsItem = document.createElement('li');
+        clsItem.textContent = json.closures[iCls];
+        templeClseUL.appendChild(clsItem);
+    }
+
+    templeSvcSection.appendChild(templeSvcUL);
+    templeCloseSection.append(templeClseUL);
 
 }
 
