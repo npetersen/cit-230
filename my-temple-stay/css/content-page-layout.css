@@ -18,8 +18,8 @@ body {
     font-weight: bolder;
 }
 
-#temple-closure-list {
-    font-size: .85em;
+img#weather-icon {
+    vertical-align: middle;
 }
 
 @media screen and (min-width: 700px) {

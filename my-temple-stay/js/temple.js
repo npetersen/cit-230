@@ -15,12 +15,10 @@ pageDataRequest.open('GET', pageDataURL);
 pageDataRequest.responseType = 'json';
 pageDataRequest.send();
 
-/*
 weatherRequest = new XMLHttpRequest();
 weatherRequest.open('GET', weatherDataURL);
 weatherRequest.responseType = 'json';
 weatherRequest.send();
-*/
 
 pageDataRequest.onload = function() {
 
@@ -50,6 +48,11 @@ pageDataRequest.onload = function() {
 
 }
 
+weatherRequest.onload = function() {
+    var weatherData = weatherRequest.response;
+    populateWeatherData(weatherData);
+}
+
 function populatePageContent(json) {
     var templeName = json.name;
     var titleText = "Details About The " + templeName + " Temple";
@@ -57,6 +60,10 @@ function populatePageContent(json) {
     var templeSvcUL = document.createElement('ul');
     var templeCloseSection = document.getElementById('temple-closure-list');
     var templeClseUL = document.createElement('ul');
+    var templeHistSection = document.getElementById('temple-history-list');
+    var templeHistUL = document.createElement('ul');
+    var templeSessSection = document.getElementById('temple-schedule-list');
+    var templeSessUL = document.createElement('ul');
 
     document.title = "My Temple Stay | " + titleText;
     $('#temple-page-h1').html("The " + templeName + " Temple");
@@ -64,6 +71,7 @@ function populatePageContent(json) {
     $('#temple-address').html(json.address.address1 + "<br>" + json.address.city + ", " + json.address.state + " " + json.address.zip + json.address.zip_4);
     $('#temple-phone').html(json.phone);
     $('#temple-email').html(json.email);
+    $('#temple-description').html(json.description);
 
     for (iSvc = 0; iSvc < json.services.length; iSvc++) {
         var svcItem = document.createElement('li');
@@ -77,9 +85,45 @@ function populatePageContent(json) {
         templeClseUL.appendChild(clsItem);
     }
 
+    for (iHst = 0; iHst < json.history.length; iHst++) {
+        var hstItem = document.createElement('li');
+        hstItem.textContent = json.history[iHst];
+        templeHistUL.appendChild(hstItem);
+    }
+
+    for (iSes = 0; iSes < json.session_schedule.length; iSes++) {
+        var sessItem = document.createElement('li');
+        sessItem.textContent = json.session_schedule[iSes];
+        templeSessUL.appendChild(sessItem);
+    }
+
     templeSvcSection.appendChild(templeSvcUL);
     templeCloseSection.append(templeClseUL);
+    templeHistSection.append(templeHistUL);
+    templeSessSection.append(templeSessUL);
+}
 
+function populateWeatherData(json) {
+    var weatherData = json;
+    var weatherIcon = document.getElementById('weather-icon');
+    var weatherAtGlance = document.getElementById('weather-at-glance');
+    var currentCondition = document.getElementById('current-condition');
+    var currentTemp = document.getElementById('current-temp');
+    var currentHumidity = document.getElementById('current-humidity');
+    var currentPrecip = document.getElementById('current-precip');
+    var windSpeed = document.getElementById('wind-speed');
+
+    if (weatherIcon) { weatherIcon.src = iconURL + weatherData.weather[0].icon + '.png' }
+    if (weatherAtGlance) { weatherAtGlance.innerHTML = weatherData.weather[0].description + " " + Math.round(weatherData.main.temp) + "&deg" }
+    if (currentCondition) { currentCondition.innerHTML = weatherData.weather[0].description }
+    if (currentTemp) { currentTemp.innerHTML = Math.round(weatherData.main.temp) + "&deg; F"; }
+    if (currentHumidity) { currentHumidity.innerHTML = weatherData.main.humidity + "%"; }
+    if (currentPrecip && weatherData.hasOwnProperty('rain')) { 
+        currentPrecip.innerHTML = weatherData.rain['1h'] + " inches"; 
+    } else {
+        currentPrecip.innerHTML = "Not Available"
+    }
+    if (windSpeed) { windSpeed.innerHTML = weatherData.wind.speed + " mph" }
 }
 
 function getImagesArray(json) {
