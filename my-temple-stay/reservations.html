@@ -83,12 +83,12 @@
                                 <option value="studio">Studio</option>
                             </select>
                     </li>
-                    <li><label for="num-rooms">Number of Rooms</label><input type="number" name="num-rooms" id="num-rooms" placeholder="How many rooms do you need?"></li>
-                    <li><label for="date">Date</label><input type="date" name="date" id="date" placeholder="Select a date"></li>
-                    <li><label for="full-name">Full Name</label><input type="text" name="full-name" id="full-name" placeholder="Enter your full name"></li>
-                    <li><label for="home-location">Home State or Country</label><input type="text" name="home-location" id="home-location" placeholder="Enter your home location"></li>
-                    <li><label for="email">Email</label><input type="email" name="email" id="email" placeholder="Enter your email"></li>
-                    <li><label for="phone">Phone</label><input type="tel" name="phone" id="phone" placeholder="Enter your phone"></li>
+                    <li><label for="num-rooms">Number of Rooms</label><input type="number" name="num-rooms" id="num-rooms" placeholder="How many rooms do you need?" required></li>
+                    <li><label for="date">Date</label><input type="date" name="date" id="date" placeholder="Select a date" required></li>
+                    <li><label for="full-name">Full Name</label><input type="text" name="full-name" id="full-name" placeholder="Enter your full name" pattern="[a-zA-Z ]{5,30}" required></li>
+                    <li><label for="home-location">Home State or Country</label><input type="text" name="home-location" id="home-location" placeholder="Enter your home location" required></li>
+                    <li><label for="email">Email</label><input type="email" name="email" id="email" placeholder="Enter your email" required></li>
+                    <li><label for="phone">Phone</label><input type="tel" name="phone" id="phone" placeholder="Enter your phone" required></li>
                     <li><label for="message">Comments</label><textarea rows="6" name="message" id="message" placeholder="Enter your message"></textarea></li>
                     <li><button class="cta-home" type="submit">Make Your Reservation!</button></li>
                 </ul>
